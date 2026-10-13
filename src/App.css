@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap");
+
+:root {
+  --abyss: #0a2733;
+  --lagoon: #0f7f8a;
+  --sun: #f2b632;
+  --foam: #eef6f6;
+  --ink: #14232b;
+  --muted: #4d6169;
+  --white: #ffffff;
+  --font-head: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  --font-body: "Figtree", "Segoe UI", sans-serif;
+  --header-h: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+body { margin: 0; font-family: var(--font-body); color: var(--ink); background: var(--white); line-height: 1.65; }
+img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; margin: 0 0 .5em; }
+
+.container { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+.section { padding: 5rem 0; }
+.section-title { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; color: var(--abyss); }
+.section-lead { max-width: 62ch; color: var(--muted); font-size: 1.05rem; }
+
+.btn { display: inline-block; padding: .8rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-family: inherit; font-size: 1rem; }
+.btn-primary { background: var(--sun); color: var(--abyss); }
+.btn-primary:hover { background: #ffc94f; }
+.btn-ghost { border-color: currentColor; color: inherit; }
+
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

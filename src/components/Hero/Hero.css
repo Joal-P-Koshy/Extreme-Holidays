@@ -1,0 +1,92 @@
+.hero {
+    position: relative;
+    min-height: min(86vh, 700px);
+    display: flex;
+    align-items: flex-end;
+    color: var(--white);
+    background: var(--abyss);
+    overflow: hidden;
+}
+
+.hero__slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.hero__slide.is-active {
+    opacity: 1;
+}
+
+.hero__shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 39, 51, .92) 5%, rgba(10, 39, 51, .35) 60%, rgba(10, 39, 51, .2));
+}
+
+.hero__content {
+    position: relative;
+    padding: 4rem 0 3rem;
+}
+
+.hero__title {
+    font-size: clamp(2.3rem, 6vw, 4.4rem);
+    font-weight: 800;
+    max-width: 16ch;
+}
+
+.hero__text {
+    max-width: 56ch;
+    font-size: 1.15rem;
+    color: #dcebed;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin: 1.6rem 0 2rem;
+}
+
+.hero__now {
+    margin: 0 0 .6rem;
+    font-size: .95rem;
+    color: #bcd4d8;
+}
+
+.hero__dots {
+    display: flex;
+    gap: .5rem;
+}
+
+.hero__dots button {
+    width: 34px;
+    height: 5px;
+    border: 0;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .35);
+    cursor: pointer;
+    padding: 0;
+}
+
+.hero__dots button.is-active {
+    background-color: #0047b9;
+}
+
+.btn-1 {
+  background: #0047b9;
+  color: #ffffff;
+}
+
+.btn-1:hover {
+  background: #032f9e;
+  border-color: #164663;
+}
+
+.btn-2:hover {
+    background: #032f9e;
+    color: #ffffff;
+}

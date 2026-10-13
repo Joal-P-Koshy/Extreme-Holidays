@@ -1,0 +1,8 @@
+.footer { background: var(--abyss); color: #c3d6d9; padding: 3rem 0 1.5rem; }
+.footer__inner { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.footer__name { font-family: var(--font-head); font-size: 1.4rem; color: var(--white); }
+.footer p { margin: .2rem 0 0; }
+.footer nav { display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: flex-start; }
+.footer nav a { color: #c3d6d9; text-decoration: none; }
+.footer nav a:hover { color: var(--sun); }
+.footer__legal { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.15); font-size: .9rem; }

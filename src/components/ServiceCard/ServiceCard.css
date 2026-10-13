@@ -1,0 +1,7 @@
+.service-card { display: flex; flex-direction: column; background: var(--white); border: 1px solid #d5e3e5; border-radius: 10px; overflow: hidden; }
+.service-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: var(--foam); }
+.service-card__body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.service-card h3 { font-size: 1.35rem; color: var(--abyss); }
+.service-card p { color: var(--muted); font-size: .98rem; margin: 0 0 1.2rem; }
+.service-card__cta { margin-top: auto; align-self: flex-start; color: var(--lagoon); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--sun); }
+.service-card__cta:hover { color: var(--abyss); }
