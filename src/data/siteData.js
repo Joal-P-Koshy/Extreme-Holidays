@@ -19,7 +19,7 @@ import kerala from "../assets/kl.png";
 import ayurveda from "../assets/ayurveda.png";
 import lakweek from "../assets/lakand/lak11.jpg";
 import samudram from "../assets/samudram.png";
-import AndLak from "../assets/ldan.png";
+import andlak from "../assets/ldan.png";
 import starcruise from "../assets/cruise.png";
 ////////////////////////////////////////////////
 import lak1 from "../assets/lakand/lak1.jpg";
@@ -96,7 +96,7 @@ export const holidays = [
   { title: "Ayurveda", image: ayurveda, text: "A science 5,000 years old, blending tradition, medicine, meditation and healing. Ayurveda is now one of the most sought-after therapies." },
   { title: "Lakshadweep Weekend", image: lakweek, link: "/lakshadweep-packages.html", text: "Islands 220 to 440 km off the Kerala coast, reached by ship or by flights from Kochi to Agatti, with helicopter transfer to Kavaratti. Remote, pristine and peaceful." },
   { title: "Samudram", image: samudram, link: "/samudram-packages.html", text: "An ideal getaway of solitude and verdant surroundings in the Lakshadweep islands, connected to the mainland by passenger ships and flights from Kochi." },
-  { title: "Andaman & Lakshadweep", image: AndLak, text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm." },
+  { title: "Andaman & Lakshadweep", image: andlak, text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm." },
   { title: "Star Cruises", image: starcruise, text: "An all-inclusive floating resort: meals, daytime activities, nightly entertainment and exotic ports, with no reservations, connections or packing and unpacking to worry about." },
 ];
    
