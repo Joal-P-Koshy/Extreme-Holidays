@@ -1,23 +1,65 @@
+
 import { useState } from "react";
 import { company, navLinks } from "../../data/siteData";
 import "./Header.css";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  // Replace this with your actual WhatsApp number
+  const whatsappNumber = "919876543210";
+
+  const message =
+    "Hello Extreme Holidays! 👋 I would like to enquire about your holiday and adventure packages. Please share more details.";
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
   return (
     <header className="header">
       <div className="container header__bar">
-        <a href="#home" className="header__brand" aria-label={`${company.name} home`}>
+        <a
+          href="#home"
+          className="header__brand"
+          aria-label={`${company.name} home`}
+        >
           <img src={company.logo} alt={company.name} />
         </a>
-        <button className="header__toggle" aria-expanded={open} aria-controls="main-nav" onClick={() => setOpen(!open)}>
+
+        <button
+          className="header__toggle"
+          aria-expanded={open}
+          aria-controls="main-nav"
+          onClick={() => setOpen(!open)}
+        >
           {open ? "Close" : "Menu"}
         </button>
-        <nav id="main-nav" className={`header__nav ${open ? "is-open" : ""}`} aria-label="Main">
+
+        <nav
+          id="main-nav"
+          className={`header__nav ${open ? "is-open" : ""}`}
+          aria-label="Main"
+        >
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+            >
+              {l.label}
+            </a>
           ))}
-          <a className="btn btn-1 header__cta" href="#contact" onClick={() => setOpen(false)}>Enquire</a>
+
+          <a
+            className="btn btn-1 header__cta"
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            Enquire
+          </a>
         </nav>
       </div>
     </header>
