@@ -105,8 +105,7 @@ export default function Hero() {
           variants={itemVariants}
         >
           Adventure and holiday packages from Kochi, Kerala:
-          scuba diving, trekking, cycling, backwater fishing,
-          Ayurveda and island escapes.
+          scuba diving, trekking, cycling, backwater fishing and island escapes.
         </motion.p>
 
         {/* Action buttons */}
