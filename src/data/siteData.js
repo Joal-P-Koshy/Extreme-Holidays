@@ -24,17 +24,17 @@ import starcruise from "../assets/cruise.png";
 ////////////////////////////////////////////////
 import lak1 from "../assets/lakand/lak1.jpg";
 import lak2 from "../assets/lakand/lak4.jpg";
-import lak3 from "../assets/lakand/lak7.jpg";
+import lak3 from "../assets/lakand/lak6.jpg";
 import lak4 from "../assets/lakand/lak9.jpg";
 import lak5 from "../assets/lakand/lak10.jpg";
 import lak6 from "../assets/lakand/lak8.jpg";
 /////////////////////////////////////////
 ////////////////////////////////////////////////
 import and1 from "../assets/lakand/and12.jpg";
-import and2 from "../assets/lakand/and4.jpg";
+import and2 from "../assets/lakand/and5.jpg";
 import and3 from "../assets/lakand/and7.jpg";
-import and4 from "../assets/lakand/and9.jpg";
-import and5 from "../assets/lakand/and10.jpg";
+import and4 from "../assets/lakand/and14.jpg";
+import and5 from "../assets/lakand/and13.jpg";
 import and6 from "../assets/lakand/and8.jpg";
 /////////////////////////////////////////
 
@@ -84,22 +84,55 @@ export const about = {
   ],
 };
 
+
+
 export const adventures = [
-  { title: "Diving", image: scuba, text: "Scuba diving (self-contained underwater breathing apparatus) has joined the ranks of extreme activities for the adventure seeker. Meet brightly coloured marine life, watch a school of sharks, or discover caves and sunken ships." },
-  { title: "Trekking", image: trekking, text: "Trekking is the spirit of every adventure trip. Nothing beats a hike up a steep mountain or a foray across untouched forests and valleys, powered by will, stamina and whatever you can carry on your back." },
-  { title: "Fishing", image: fishing, text: "Adventure fishing is a sport with countless places to practise it, from backwaters to the Indian Ocean. Part of the thrill is the journey and the skill you bring while waiting for that perfect bite." },
-  { title: "Riding", image: riding, text: "Bicycle touring takes you long distances over a couple of days or many years. Free from the confines of a car, you get closer to the places and culture you pass through." },
+  {
+    title: "Diving",
+    image: scuba,
+    text: "Explore colourful marine life and discover the underwater world. Meet brightly coloured fish, explore coral reefs, or discover underwater caves and sunken ships.",
+    duration: "To be confirmed",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Trekking",
+    image: trekking,
+    text: "Discover scenic mountain trails, forests and valleys. Experience the spirit of adventure as you hike through breathtaking landscapes.",
+    duration: "To be confirmed",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Fishing",
+    image: fishing,
+    text: "Enjoy adventure fishing in beautiful locations, from peaceful backwaters to the Indian Ocean. Experience the thrill of the catch and the beauty of the journey.",
+    duration: "To be confirmed",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Riding",
+    image: riding,
+    text: "Explore scenic routes on two wheels. Bicycle touring brings you closer to local culture, beautiful landscapes and exciting destinations.",
+    duration: "To be confirmed",
+    price: "Contact us for pricing",
+  },
 ];
+
+// export const adventures = [
+//   { title: "Diving", image: scuba, text: "Scuba diving (self-contained underwater breathing apparatus) has joined the ranks of extreme activities for the adventure seeker. Meet brightly coloured marine life, watch a school of sharks, or discover caves and sunken ships." },
+//   { title: "Trekking", image: trekking, text: "Trekking is the spirit of every adventure trip. Nothing beats a hike up a steep mountain or a foray across untouched forests and valleys, powered by will, stamina and whatever you can carry on your back." },
+//   { title: "Fishing", image: fishing, text: "Adventure fishing is a sport with countless places to practise it, from backwaters to the Indian Ocean. Part of the thrill is the journey and the skill you bring while waiting for that perfect bite." },
+//   { title: "Riding", image: riding, text: "Bicycle touring takes you long distances over a couple of days or many years. Free from the confines of a car, you get closer to the places and culture you pass through." },
+// ];
 
 export const holidays = [
   { title: "Kerala", image: kerala, text: "God's Own Country: a land of tradition, mystery and beauty. In a few hours you can go from a cold mountain resort to sun-kissed beaches to humid jungle." },
-  { title: "Ayurveda", image: ayurveda, text: "A science 5,000 years old, blending tradition, medicine, meditation and healing. Ayurveda is now one of the most sought-after therapies." },
+  // { title: "Ayurveda", image: ayurveda, text: "A science 5,000 years old, blending tradition, medicine, meditation and healing. Ayurveda is now one of the most sought-after therapies." },
   { title: "Lakshadweep Weekend", image: lakweek, link: "/lakshadweep-packages.html", text: "Islands 220 to 440 km off the Kerala coast, reached by ship or by flights from Kochi to Agatti, with helicopter transfer to Kavaratti. Remote, pristine and peaceful." },
   { title: "Samudram", image: samudram, link: "/samudram-packages.html", text: "An ideal getaway of solitude and verdant surroundings in the Lakshadweep islands, connected to the mainland by passenger ships and flights from Kochi." },
   { title: "Andaman & Lakshadweep", image: andlak, text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm." },
   { title: "Star Cruises", image: starcruise, text: "An all-inclusive floating resort: meals, daytime activities, nightly entertainment and exotic ports, with no reservations, connections or packing and unpacking to worry about." },
 ];
-   
+
 export const gallery = {
   Lakshadweep: [lak1, lak2, lak3, lak4, lak5, lak6],
   Andaman: [and1, and2, and3, and4, and5, and6],
