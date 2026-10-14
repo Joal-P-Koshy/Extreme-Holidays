@@ -1,4 +1,55 @@
-.holidays { background: var(--foam); }
-.holidays__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; margin-top: 2.5rem; }
-@media (max-width: 960px) { .holidays__grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 620px) { .holidays__grid { grid-template-columns: 1fr; } }
+
+.holidays {
+    background: var(--foam);
+}
+
+.holidays__intro {
+    text-align: center;
+}
+
+.holidays__intro .section-title {
+    transform-origin: center top;
+}
+
+.holidays__intro .section-lead {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.holidays__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.6rem;
+    margin-top: 2.5rem;
+    align-items: stretch;
+}
+
+.holidays__item {
+    min-width: 0;
+    height: 100%;
+}
+
+.holidays__item .service-card {
+    height: 100%;
+}
+
+@media (max-width: 960px) {
+    .holidays__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .holidays__grid {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .holidays__intro *,
+    .holidays__item {
+        animation: none;
+    }
+}

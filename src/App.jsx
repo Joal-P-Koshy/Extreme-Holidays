@@ -14,8 +14,8 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Adventure />
         <Holidays />
+        <Adventure />
         <Gallery />
         <Contact />
       </main>

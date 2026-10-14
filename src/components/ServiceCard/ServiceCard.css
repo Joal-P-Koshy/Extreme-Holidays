@@ -1,17 +1,39 @@
+
 .service-card {
     display: flex;
     flex-direction: column;
+    height: 100%;
     background: var(--white);
     border: 1px solid #d5e3e5;
     border-radius: 10px;
     overflow: hidden;
+
+    /* Smooth whole-card animation */
+    transform: scale(1);
+    transition:
+        transform 0.4s cubic-bezier(0.2, 0.7, 0.3, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+    will-change: transform;
+}
+
+/* Zoom the entire card on hover */
+.service-card:hover {
+    transform: scale(1.035);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--lagoon);
 }
 
 .service-card img {
+    display: block;
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
     background: var(--foam);
+
+    /* Remove the individual image zoom */
+    transform: none;
+    transition: none;
 }
 
 .service-card__body {
@@ -28,7 +50,7 @@
 
 .service-card p {
     color: var(--muted);
-    font-size: .98rem;
+    font-size: 0.98rem;
     margin: 0 0 1.2rem;
 }
 
@@ -45,20 +67,34 @@
     color: var(--abyss);
 }
 
-
 .service-card__enquire {
-  display: inline-block;
-  padding: 0;
-  border: 0;
-  border-bottom: 2px solid #f5a623;
-  background: transparent;
-  color: #078b99;
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  transition: color 0.2s ease;
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0;
+    border: 0;
+    border-bottom: 2px solid #f5a623;
+    background: transparent;
+    color: #078b99;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
 
 .service-card__enquire:hover {
-  color: #0649bd;
+    color: #0649bd;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .service-card,
+    .service-card img,
+    .service-card__enquire {
+        transition: none;
+    }
+
+    .service-card:hover {
+        transform: none;
+    }
 }

@@ -1,4 +1,148 @@
+
 .hero {
+  position: relative;
+  min-height: min(86vh, 700px);
+  display: flex;
+  align-items: flex-end;
+  color: var(--white);
+  background: var(--abyss);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Background slideshow — opacity is controlled by Motion */
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+/* Dark overlay for text readability */
+.hero__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 39, 51, 0.92) 5%,
+    rgba(10, 39, 51, 0.35) 60%,
+    rgba(10, 39, 51, 0.2)
+  );
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 4rem 0 3rem;
+}
+
+.hero__title {
+  font-size: clamp(2.3rem, 6vw, 4.4rem);
+  font-weight: 800;
+  max-width: 16ch;
+  line-height: 1.08;
+  margin-bottom: 1.2rem;
+}
+
+.hero__text {
+  max-width: 56ch;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #dcebed;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.6rem 0 2rem;
+}
+
+.hero__now {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: #bcd4d8;
+}
+
+.hero__dots {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.hero__dots button {
+  width: 34px;
+  height: 5px;
+  border: 0;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  padding: 0;
+}
+
+.hero__dots button.is-active {
+  background-color: #4c91ff;
+}
+
+/* Primary button */
+.btn-1 {
+  background: #0047b9;
+  color: #ffffff;
+  border-color: #0047b9;
+}
+
+.btn-1:hover {
+  background: #032f9e;
+  border-color: #032f9e;
+}
+
+/* Secondary button */
+.btn-2:hover {
+  background: #032f9e;
+  color: #ffffff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 78vh;
+  }
+
+  .hero__content {
+    padding: 3rem 0 2rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .hero__text {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    gap: 0.65rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero__slide {
+    will-change: auto;
+  }
+}
+
+
+
+
+
+
+/* .hero {
     position: relative;
     min-height: min(86vh, 700px);
     display: flex;
@@ -89,4 +233,4 @@
 .btn-2:hover {
     background: #032f9e;
     color: #ffffff;
-}
+} */

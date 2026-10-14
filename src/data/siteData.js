@@ -16,26 +16,30 @@ import fishing from "../assets/fishing.png";
 import riding from "../assets/bicycle.png";
 ////////////////////////////////////////////
 import kerala from "../assets/kl.png";
-import ayurveda from "../assets/ayurveda.png";
-import lakweek from "../assets/lakand/lak11.jpg";
+// import ayurveda from "../assets/ayurveda.png";
+import lakweek from "../assets/lakand/lak11.png";
 import samudram from "../assets/samudram.png";
 import andlak from "../assets/ldan.png";
 import starcruise from "../assets/cruise.png";
 ////////////////////////////////////////////////
-import lak1 from "../assets/lakand/lak1.jpg";
-import lak2 from "../assets/lakand/lak4.jpg";
-import lak3 from "../assets/lakand/lak6.jpg";
-import lak4 from "../assets/lakand/lak9.jpg";
-import lak5 from "../assets/lakand/lak10.jpg";
-import lak6 from "../assets/lakand/lak8.jpg";
+import hc1 from "../assets/happyCoustomers/hc1.png";
+import hc2 from "../assets/happyCoustomers/hc2.png";
+import hc3 from "../assets/happyCoustomers/hc3.png";
+import hc4 from "../assets/happyCoustomers/hc4.png";
+import hc5 from "../assets/happyCoustomers/hc5.png";
+import hc6 from "../assets/happyCoustomers/hc6.png";
+import hc7 from "../assets/happyCoustomers/hc7.png";
+import hc8 from "../assets/happyCoustomers/hc8.png";
+import hc9 from "../assets/happyCoustomers/hc9.png";
+import hc10 from "../assets/happyCoustomers/hc10.png";
 /////////////////////////////////////////
 ////////////////////////////////////////////////
 import and1 from "../assets/lakand/and12.jpg";
-import and2 from "../assets/lakand/and5.jpg";
-import and3 from "../assets/lakand/and7.jpg";
+import lak2 from "../assets/lakand/lak8.jpg";
+import lak3 from "../assets/lakand/lak1.jpg";
 import and4 from "../assets/lakand/and14.jpg";
 import and5 from "../assets/lakand/and13.jpg";
-import and6 from "../assets/lakand/and8.jpg";
+import lak1 from "../assets/lakand/lak10.jpg";
 /////////////////////////////////////////
 
 export const company = {
@@ -86,6 +90,7 @@ export const about = {
 
 
 
+
 export const adventures = [
   {
     title: "Diving",
@@ -116,14 +121,6 @@ export const adventures = [
     price: "Contact us for pricing",
   },
 ];
-
-// export const adventures = [
-//   { title: "Diving", image: scuba, text: "Scuba diving (self-contained underwater breathing apparatus) has joined the ranks of extreme activities for the adventure seeker. Meet brightly coloured marine life, watch a school of sharks, or discover caves and sunken ships." },
-//   { title: "Trekking", image: trekking, text: "Trekking is the spirit of every adventure trip. Nothing beats a hike up a steep mountain or a foray across untouched forests and valleys, powered by will, stamina and whatever you can carry on your back." },
-//   { title: "Fishing", image: fishing, text: "Adventure fishing is a sport with countless places to practise it, from backwaters to the Indian Ocean. Part of the thrill is the journey and the skill you bring while waiting for that perfect bite." },
-//   { title: "Riding", image: riding, text: "Bicycle touring takes you long distances over a couple of days or many years. Free from the confines of a car, you get closer to the places and culture you pass through." },
-// ];
-
 
 
 export const holidays = [
@@ -166,17 +163,7 @@ export const holidays = [
   },
 ];
 
-
-// export const holidays = [
-//   { title: "Kerala", image: kerala, text: "God's Own Country: a land of tradition, mystery and beauty. In a few hours you can go from a cold mountain resort to sun-kissed beaches to humid jungle." },
-//   // { title: "Ayurveda", image: ayurveda, text: "A science 5,000 years old, blending tradition, medicine, meditation and healing. Ayurveda is now one of the most sought-after therapies." },
-//   { title: "Lakshadweep Weekend", image: lakweek, link: "/lakshadweep-packages.html", text: "Islands 220 to 440 km off the Kerala coast, reached by ship or by flights from Kochi to Agatti, with helicopter transfer to Kavaratti. Remote, pristine and peaceful." },
-//   { title: "Samudram", image: samudram, link: "/samudram-packages.html", text: "An ideal getaway of solitude and verdant surroundings in the Lakshadweep islands, connected to the mainland by passenger ships and flights from Kochi." },
-//   { title: "Andaman & Lakshadweep", image: andlak, text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm." },
-//   { title: "Star Cruises", image: starcruise, text: "An all-inclusive floating resort: meals, daytime activities, nightly entertainment and exotic ports, with no reservations, connections or packing and unpacking to worry about." },
-// ];
-
 export const gallery = {
-  Lakshadweep: [lak1, lak2, lak3, lak4, lak5, lak6],
-  Andaman: [and1, and2, and3, and4, and5, and6],
+  "Happy Customers": [hc1, hc2, hc3,hc7, hc8, hc9, hc10, hc4, hc5, hc6],
+  "social Media Posts": [lak1, lak2, lak3, and4, and5, and1],
 };
