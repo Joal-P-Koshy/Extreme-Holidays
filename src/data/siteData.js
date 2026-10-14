@@ -124,14 +124,57 @@ export const adventures = [
 //   { title: "Riding", image: riding, text: "Bicycle touring takes you long distances over a couple of days or many years. Free from the confines of a car, you get closer to the places and culture you pass through." },
 // ];
 
+
+
 export const holidays = [
-  { title: "Kerala", image: kerala, text: "God's Own Country: a land of tradition, mystery and beauty. In a few hours you can go from a cold mountain resort to sun-kissed beaches to humid jungle." },
-  // { title: "Ayurveda", image: ayurveda, text: "A science 5,000 years old, blending tradition, medicine, meditation and healing. Ayurveda is now one of the most sought-after therapies." },
-  { title: "Lakshadweep Weekend", image: lakweek, link: "/lakshadweep-packages.html", text: "Islands 220 to 440 km off the Kerala coast, reached by ship or by flights from Kochi to Agatti, with helicopter transfer to Kavaratti. Remote, pristine and peaceful." },
-  { title: "Samudram", image: samudram, link: "/samudram-packages.html", text: "An ideal getaway of solitude and verdant surroundings in the Lakshadweep islands, connected to the mainland by passenger ships and flights from Kochi." },
-  { title: "Andaman & Lakshadweep", image: andlak, text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm." },
-  { title: "Star Cruises", image: starcruise, text: "An all-inclusive floating resort: meals, daytime activities, nightly entertainment and exotic ports, with no reservations, connections or packing and unpacking to worry about." },
+  {
+    title: "Kerala",
+    image: kerala,
+    text: "God's Own Country: a land of tradition, mystery and beauty. In a few hours you can go from a cold mountain resort to sun-kissed beaches to humid jungle.",
+    duration: "Customizable",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Lakshadweep Weekend",
+    image: lakweek,
+    link: "/lakshadweep-packages.html",
+    text: "Islands 220 to 440 km off the Kerala coast, reached by ship or by flights from Kochi to Agatti, with helicopter transfer to Kavaratti. Remote, pristine and peaceful.",
+    duration: "As per selected package",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Samudram",
+    image: samudram,
+    link: "/samudram-packages.html",
+    text: "An ideal getaway of solitude and verdant surroundings in the Lakshadweep islands, connected to the mainland by passenger ships and flights from Kochi.",
+    duration: "As per selected package",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Andaman & Lakshadweep",
+    image: andlak,
+    text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm.",
+    duration: "Customizable",
+    price: "Contact us for pricing",
+  },
+  {
+    title: "Star Cruises",
+    image: starcruise,
+    text: "An all-inclusive floating resort: meals, daytime activities, nightly entertainment and exotic ports, with no reservations, connections or packing and unpacking to worry about.",
+    duration: "As per cruise itinerary",
+    price: "Contact us for pricing",
+  },
 ];
+
+
+// export const holidays = [
+//   { title: "Kerala", image: kerala, text: "God's Own Country: a land of tradition, mystery and beauty. In a few hours you can go from a cold mountain resort to sun-kissed beaches to humid jungle." },
+//   // { title: "Ayurveda", image: ayurveda, text: "A science 5,000 years old, blending tradition, medicine, meditation and healing. Ayurveda is now one of the most sought-after therapies." },
+//   { title: "Lakshadweep Weekend", image: lakweek, link: "/lakshadweep-packages.html", text: "Islands 220 to 440 km off the Kerala coast, reached by ship or by flights from Kochi to Agatti, with helicopter transfer to Kavaratti. Remote, pristine and peaceful." },
+//   { title: "Samudram", image: samudram, link: "/samudram-packages.html", text: "An ideal getaway of solitude and verdant surroundings in the Lakshadweep islands, connected to the mainland by passenger ships and flights from Kochi." },
+//   { title: "Andaman & Lakshadweep", image: andlak, text: "Around 500 Andaman and Nicobar islands with dense forests, magnificent pools and wildlife, plus the Black Water Jail (Kaala Paani). Lakshadweep, the 'hundred thousand islands', offers exotic marine life and a long-secluded calm." },
+//   { title: "Star Cruises", image: starcruise, text: "An all-inclusive floating resort: meals, daytime activities, nightly entertainment and exotic ports, with no reservations, connections or packing and unpacking to worry about." },
+// ];
 
 export const gallery = {
   Lakshadweep: [lak1, lak2, lak3, lak4, lak5, lak6],
